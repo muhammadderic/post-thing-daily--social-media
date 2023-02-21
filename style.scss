@@ -159,6 +159,111 @@ a {
 }
 
 /* ----- Contents ----- */
-/* Board */
-/* Today */
-/* Yesterday */
+#contents {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  /* Board */
+  .board {
+    padding: 1rem;
+
+    .board-title {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      font-weight: bold;
+      color: $d-blue;
+    }
+
+    .news {
+      @include card();
+      background-image: url(../img/news-board-img.jpg);
+      background-size: cover;
+      background-position: center center;
+
+      .space {
+        height: 200px;
+      }
+
+      .news-detail {
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+
+        .detail {
+          .news-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: $d-blue;
+          }
+
+          .news-subtitle {
+            font-size: 0.8rem;
+          }
+        }
+
+        .icon {
+          @include icon_default();
+          padding: 0.5rem;
+          font-size: 2rem;
+          color: $d-blue;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+
+    .campaign {
+      @include card();
+      padding: 1rem;
+
+      .campaign-title {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: $d-blue;
+      }
+
+      .items {
+        margin: 1rem 0;
+
+        .item {
+          margin: 0.5rem 0;
+          display: grid;
+          grid-template-columns: 10% 70% 20%;
+
+          .icon {
+            @include icon_default();
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $d-blue;
+          }
+
+          .detail {
+            margin-left: 0.5rem;
+
+            .detail-people {
+              font-size: 0.8rem;
+              color: grey;
+            }
+          }
+
+          .btn {
+            @include btn();
+            font-size: 0.8rem;
+          }
+        }
+      }
+
+      .field {
+        .btn {
+          @include btn();
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  /* Today */
+  /* Yesterday */
+}

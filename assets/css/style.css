@@ -123,6 +123,133 @@ a {
 }
 
 /* ----- Contents ----- */
-/* Board */
-/* Today */
-/* Yesterday *//*# sourceMappingURL=style.css.map */
+#contents {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Board */
+  /* Today */
+  /* Yesterday */
+}
+#contents .board {
+  padding: 1rem;
+}
+#contents .board .board-title {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2B3467;
+}
+#contents .board .news {
+  margin: 1rem 0;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-image: url(../img/news-board-img.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+#contents .board .news .space {
+  height: 200px;
+}
+#contents .board .news .news-detail {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+#contents .board .news .news-detail .detail .news-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2B3467;
+}
+#contents .board .news .news-detail .detail .news-subtitle {
+  font-size: 0.8rem;
+}
+#contents .board .news .news-detail .icon {
+  color: #FCFFE7;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 2rem;
+  color: #2B3467;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contents .board .news .news-detail .icon:hover {
+  color: #EB455F;
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+#contents .board .campaign {
+  margin: 1rem 0;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 1rem;
+}
+#contents .board .campaign .campaign-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2B3467;
+}
+#contents .board .campaign .items {
+  margin: 1rem 0;
+}
+#contents .board .campaign .items .item {
+  margin: 0.5rem 0;
+  display: grid;
+  grid-template-columns: 10% 70% 20%;
+}
+#contents .board .campaign .items .item .icon {
+  color: #FCFFE7;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2B3467;
+}
+#contents .board .campaign .items .item .icon:hover {
+  color: #EB455F;
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+#contents .board .campaign .items .item .detail {
+  margin-left: 0.5rem;
+}
+#contents .board .campaign .items .item .detail .detail-people {
+  font-size: 0.8rem;
+  color: grey;
+}
+#contents .board .campaign .items .item .btn {
+  margin: 0 5px 10px 0;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #2B3467;
+  color: #FCFFE7;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+#contents .board .campaign .items .item .btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition-duration: 0.5s;
+}
+#contents .board .campaign .field .btn {
+  margin: 0 5px 10px 0;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #2B3467;
+  color: #FCFFE7;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+#contents .board .campaign .field .btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition-duration: 0.5s;
+}/*# sourceMappingURL=style.css.map */
