@@ -12,6 +12,46 @@ a {
   text-decoration: none;
 }
 
+.today-img1 {
+  background-image: url(../img/today-img1.jpg);
+}
+
+.today-img2 {
+  background-image: url(../img/today-img2.jpg);
+}
+
+.today-img3 {
+  background-image: url(../img/today-img3.jpg);
+}
+
+.today-img4 {
+  background-image: url(../img/today-img4.jpg);
+}
+
+.today-img5 {
+  background-image: url(../img/today-img5.jpg);
+}
+
+.yesterday-img1 {
+  background-image: url(../img/yesterday-img1.jpg);
+}
+
+.yesterday-img2 {
+  background-image: url(../img/yesterday-img2.jpg);
+}
+
+.yesterday-img3 {
+  background-image: url(../img/yesterday-img3.jpg);
+}
+
+.yesterday-img4 {
+  background-image: url(../img/yesterday-img4.jpg);
+}
+
+.yesterday-img5 {
+  background-image: url(../img/yesterday-img5.jpg);
+}
+
 /* ===== MIXINS ===== */
 /* ===== NESTING ===== */
 /* ----- Header ----- */
@@ -252,4 +292,58 @@ a {
 #contents .board .campaign .field .btn:hover {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   transition-duration: 0.5s;
+}
+#contents .post {
+  margin: 1rem 0;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  overflow: hidden;
+}
+#contents .post .img {
+  height: 200px;
+  background-position: center center;
+  background-size: cover;
+}
+#contents .post .detail {
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+#contents .post .detail .title {
+  font-size: 0.8rem;
+}
+#contents .post .detail .manager {
+  text-align: right;
+}
+#contents .post .detail .manager .icon {
+  color: #FCFFE7;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  color: #2B3467;
+}
+#contents .post .detail .manager .icon:hover {
+  color: #EB455F;
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+
+#footer {
+  height: 4rem;
+  background-color: #2B3467;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#footer .copyright,
+#footer .copyright a {
+  color: #fff;
+  font-size: 0.8rem;
+}
+#footer .powered {
+  font-size: 0.6rem;
+  color: #fff;
+}
+#footer .powered .by {
+  color: #EB455F;
 }/*# sourceMappingURL=style.css.map */

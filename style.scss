@@ -17,6 +17,46 @@ a {
   text-decoration: none;
 }
 
+.today-img1 {
+  background-image: url(../img/today-img1.jpg);
+}
+
+.today-img2 {
+  background-image: url(../img/today-img2.jpg);
+}
+
+.today-img3 {
+  background-image: url(../img/today-img3.jpg);
+}
+
+.today-img4 {
+  background-image: url(../img/today-img4.jpg);
+}
+
+.today-img5 {
+  background-image: url(../img/today-img5.jpg);
+}
+
+.yesterday-img1 {
+  background-image: url(../img/yesterday-img1.jpg);
+}
+
+.yesterday-img2 {
+  background-image: url(../img/yesterday-img2.jpg);
+}
+
+.yesterday-img3 {
+  background-image: url(../img/yesterday-img3.jpg);
+}
+
+.yesterday-img4 {
+  background-image: url(../img/yesterday-img4.jpg);
+}
+
+.yesterday-img5 {
+  background-image: url(../img/yesterday-img5.jpg);
+}
+
 /* ===== MIXINS ===== */
 @mixin icon_default() {
   color: $cream;
@@ -265,5 +305,60 @@ a {
   }
 
   /* Today */
+  .post {
+    @include card();
+    overflow: hidden;
+
+    .img {
+      height: 200px;
+      background-position: center center;
+      background-size: cover;
+    }
+
+    .detail {
+      padding: 0.5rem 1rem;
+      display: grid;
+      grid-template-columns: 75% 25%;
+
+      .title {
+        font-size: 0.8rem;
+      }
+
+      .manager {
+        text-align: right;
+
+        .icon {
+          @include icon_default();
+          color: $d-blue;
+        }
+      }
+    }
+  }
+
   /* Yesterday */
+}
+
+// ----- Footer -----
+#footer {
+  height: 4rem;
+  background-color: $d-blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .copyright,
+  .copyright a {
+    color: #fff;
+    font-size: 0.8rem;
+  }
+
+  .powered {
+    font-size: 0.6rem;
+    color: #fff;
+
+    .by {
+      color: $red;
+    }
+  }
 }
