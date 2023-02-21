@@ -1,8 +1,72 @@
 /* ===== VARIABLES ===== */
+$d-blue: #2B3467;
+$l-blue: #BAD7E9;
+$cream: #FCFFE7;
+$red: #EB455F;
+
 /* ===== GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #111;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* ===== MIXINS ===== */
+@mixin icon_default() {
+  color: $cream;
+  transition-duration: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    color: $red;
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+  }
+}
+
 /* ===== NESTING ===== */
 /* ----- Header ----- */
+#header {
+  height: 4rem;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: $d-blue;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+  .left {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      height: 3rem;
+    }
+  }
+
+  .right {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .link {
+    @include icon_default();
+  }
+
+  .icon {
+    @include icon_default();
+  }
+}
+
 /* ----- Search ----- */
 /* ----- Contents ----- */
 /* Board */
